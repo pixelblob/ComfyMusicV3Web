@@ -6,7 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles.css" rel="stylesheet">
-    <script src="scripts.js"></script>
+    <link href="stylesDashboard.css" rel="stylesheet">
+    <script src="scriptsDashboard.js"></script>
 
     <meta property="og:title" content="ComfyMusicV3" />
     <meta property="og:type" content="website" />
@@ -24,30 +25,18 @@
 
 <body>
     <center>
-        <h1>ComfyMusicV3</h1>
+        <h1>ComfyMusicV3 Spotify Linking/Integration</h1>
     </center>
 
-    <center>◉ Once user has signed in redirect him back to this page, showing his discord profile and spotify profile if
-        applicable
-        <br>◉ Give the user the option to sign out
-        <br>◉ Display dev news, socials, discord server
-    </center>
-
-    <div id="discordWrapper">
-        <div id="discordProfileCard">
-            <div>
-                <img id="discordProfilePicture"
-                    src="https://cdn.discordapp.com/avatars/463297245631217666/d78c7d420d0a2c8e07bdbe6c1da7a791.png?size=1024">
-                <img id="discordProfilePictureDecoration"
-                    src="https://cdn.discordapp.com/avatar-decorations/463297245631217666/a_03784846208c9a0712967eb06bc4dae3.png?size=128&passthrough=true">
-                <span id="discordUserName">[Assassin]#0001</span>
-            </div>
-            <a>
-                <div><span>Logout</span></div>
+    <center>
+        Support for Spotify Connect<br>
+        <div id="spotifyButtonWrapper">
+            <a id="spotifyButton" href="/spotify.html">
+                <div>Authorize</div>
             </a>
-        </div>
-    </div>
+        </div> your spotify and join a vc to test it out (its a bit buggy >.>)
 
+    </center>
 
     <div id="discordOauthWrapper">
         <a class="slimButton" id="comfyButton" href="/api/discord/login">
@@ -62,7 +51,7 @@
         <a class="slimButton" id="spotifyButton" href="/spotify.html">
             <div>Spotify Login</div>
         </a>
-        <a class="slimButton disabled" id="homeButton" href="/">
+        <a class="slimButton" id="homeButton" href="/">
             <div>Home</div>
         </a>
     </div>
