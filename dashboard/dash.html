@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ComfyMusicV3</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/navbar.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet">
+    <script src="scripts.js"></script>
+    <script src="/globals/scripts.js"></script>
+
+</head>
+
+<body>
+
+    <div id="backgroundBlur"></div>
+
+    <div id="header">
+
+        <center>
+            <h1>ComfyMusicV3 Dashboard</h1>
+        </center>
+
+        <div id="ceneterDivWrapper">
+            <div id="centerInfo">
+                <div id="spotifyuserInfo">
+                    <span>SpotifyID: <span id="userId"></span></span>
+                    <span>DiscordID: <span id="discordId"></span></span>
+                    <span>Username: <span id="discordUserName"></span></span>
+                </div>
+                <div id="songInfo">
+                    <img id="coverImage" src="" alt="Cover Image">
+                    <div id="songDetails">
+                        <div id="songNameArtist">
+                            <span id="songName"></span><br>
+                            <span id="artistName"></span>
+                        </div>
+                    </div>
+                </div>
+                <div id="songQueue"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="discordOauthWrapperExtra">
+        <a class="guildDropdown slimButton">
+            <div class="guildDropbtn">Discord Server</div>
+            <div class="guildDropdown-content">
+                <div>
+                    Server 1
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <video width="320" height="240" autoplay muted loop id="backgroundVideo">
+        <source  type="video/mp4" id="soruce">
+      </video>
+
+      <!-- src="https://v3.pixelboop.net/api/video.mp4" -->
+
+    <script src="/socket.io.js"></script>
+
+</body>
+
+</html>

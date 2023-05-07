@@ -1,0 +1,166 @@
+#centerInfo {
+    /* width: 300px; */
+    min-width: 300px;
+    background-color: #41D8DF center no-repeat cover;
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+}
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -9999;
+    display: none;
+  }
+
+.anim {
+    animation: face-in 5s;
+}
+
+#spotifyuserInfo>span {
+    display: block;
+    padding: 5px;
+}
+
+#ceneterDivWrapper {
+    text-align: center;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-blend-mode: multiply; */
+    /* background-color: rgb(124, 124, 124) !important;
+    background-blend-mode: color, darken, normal; */
+    transition-timing-function: ease-in-out;
+    
+}
+
+@keyframes mymove {
+    0% {
+        background-position-x: 0vw, -100vw;
+    }
+
+    100% {
+        background-position-x: 100vw, 0vw;
+    }
+}
+
+@keyframes face-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+#backgroundBlur {
+    /* backdrop-filter: blur(10px) grayscale(100%); */
+    filter: blur(0);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+#songInfo {
+    background-color: #3d3f44;
+    position: relative;
+    text-align: left;
+    margin: 0px;
+    font-size: 0px;
+}
+
+#coverImage {
+    position: relative;
+}
+
+#songDetails {
+    text-align: center;
+    width: calc(100% - 64px);
+    font-size: 1rem;
+    float: right;
+    height: 64px;
+}
+
+#songNameArtist {
+    line-height: normal;
+    text-align: left;
+    padding: 13px;
+    font-weight: bold;
+    background-color: #222324;
+}
+
+#songName {
+    font-size: 1.2rem;
+}
+
+#artistName {
+    color: rgb(165, 159, 152);
+    font-size: 0.7rem;
+}
+
+/* Dropdown Button */
+.guildDropbtn {
+    /* background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none; */
+}
+
+/* The container <div> - needed to position the dropdown content */
+.guildDropdown {
+    position: absolute;
+    display: inline-block;
+    top: 18px;
+    right: 10px
+}
+
+/* Dropdown Content (Hidden by Default) */
+.guildDropdown-content {
+    display: none !important;
+    position: absolute !important;
+    background-color: #9849d8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    bottom: -10px;
+    right: -10px;
+    max-height: 155px;
+    overflow-y: auto;
+}
+
+/* Links inside the dropdown */
+.guildDropdown-content div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.guildDropdown-content div:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.guildDropdown:hover .guildDropdown-content {
+    display: block !important;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .guildDropdown:hover .guildDropbtn {background-color: #3e8e41;} */

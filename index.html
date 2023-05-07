@@ -2,71 +2,83 @@
 <html lang="en">
 
 <head>
-    <title>ComfyMusicV3</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="styles.css" rel="stylesheet">
-    <script src="scripts.js"></script>
+  <title>ComfyMusic - V3</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="navbar.js"></script>
+  <script src="scripts.js"></script>
 
-    <meta property="og:title" content="ComfyMusicV3" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://v3.pixelboop.net/" />
-    <meta property="og:description" content="Need to write this..." />
-    <meta name="theme-color" content="#FF0058">
+  <meta property="og:title" content="ComfyMusicV3" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://v3.pixelboop.net/" />
+  <meta property="og:description" content="Need to write this..." />
+  <meta name="theme-color" content="#FF0058" />
+  <link rel="manifest" href="/site.webmanifest" />
 
-    <meta property="og:image" content="/favicon-32x32.png" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <script src="./globals/fav.js"></script>
+  <script src="/globals/scripts.js"></script>
 </head>
 
 <body>
-    <center>
-        <h1>ComfyMusicV3</h1>
-    </center>
+  <nav class="g-nav">
+    <h1>ComfyMusicV3</h1>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
 
-    <center>◉ Once user has signed in redirect him back to this page, showing his discord profile and spotify profile if
+    <span id="pfp">
+      <img id="discordProfilePicture" src="" />
+      <img id="discordProfilePictureDecoration"
+        src="https://cdn.discordapp.com/avatar-decorations/463297245631217666/a_03784846208c9a0712967eb06bc4dae3.png?size=128&passthrough=true" />
+      <span id="discordUserName">user#0000</span>
+      </div>
+    </span>
+
+  </nav>
+
+  <!-- <center>◉ Once user has signed in redirect him back to this page, showing his discord profile and spotify profile if
         applicable
         <br>◉ Give the user the option to sign out
         <br>◉ Display dev news, socials, discord server
-    </center>
-
-    <div id="discordWrapper">
-        <div id="discordProfileCard">
-            <div>
-                <img id="discordProfilePicture"
-                    src="https://cdn.discordapp.com/avatars/463297245631217666/d78c7d420d0a2c8e07bdbe6c1da7a791.png?size=1024">
-                <img id="discordProfilePictureDecoration"
-                    src="https://cdn.discordapp.com/avatar-decorations/463297245631217666/a_03784846208c9a0712967eb06bc4dae3.png?size=128&passthrough=true">
-                <span id="discordUserName">[Assassin]#0001</span>
-            </div>
-            <a>
-                <div><span>Logout</span></div>
-            </a>
-        </div>
-    </div>
+    </center> -->
 
 
-    <div id="discordOauthWrapper">
-        <a class="slimButton" id="comfyButton" href="/api/discord/login">
-            <div>Comfyzone</div>
-        </a>
-        <a class="slimButton" id="discordButton" href="/api/discord/login">
-            <div>Discord Login</div>
-        </a>
-        <a class="slimButton" id="dashboardButton" href="/dash.html">
-            <div>Music Dashboard</div>
-        </a>
-        <a class="slimButton" id="spotifyButton" href="/spotify.html">
-            <div>Spotify Login</div>
-        </a>
-        <a class="slimButton disabled" id="homeButton" href="/">
-            <div>Home</div>
-        </a>
-    </div>
 
+  <div class="sadness"></div>
+
+  <!-- <div id="discordOauthWrapper">
+      <a class="slimButton" id="comfyButton" href="/api/discord/login">
+        <div>Comfyzone</div>
+      </a>
+      <a class="slimButton" id="discordButton" href="/api/discord/login">
+        <div>Discord Login</div>
+      </a>
+      <a class="slimButton" id="dashboardButton" href="/dashboard/dash.html">
+        <div>Music Dashboard</div>
+      </a>
+      <a class="slimButton" id="spotifyButton" href="/spotify.html">
+        Spotify
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          style="fill: #59b868;">
+          <path
+            d="M12.01 2.019c-5.495 0-9.991 4.496-9.991 9.991 0 5.494 4.496 9.99 9.991 9.99 5.494 0 9.99-4.496 9.99-9.99 0-5.495-4.446-9.991-9.99-9.991zm4.595 14.436c-.199.299-.549.4-.85.201-2.349-1.45-5.296-1.75-8.793-.951-.348.102-.648-.148-.748-.449-.101-.35.149-.648.45-.749 3.795-.85 7.093-.499 9.69 1.1.35.149.4.548.251.848zm1.2-2.747c-.251.349-.7.499-1.051.249-2.697-1.646-6.792-2.148-9.939-1.148-.398.101-.85-.1-.949-.498-.101-.402.1-.852.499-.952 3.646-1.098 8.143-.548 11.239 1.351.3.149.45.648.201.998zm.099-2.799c-3.197-1.897-8.542-2.097-11.59-1.146a.938.938 0 0 1-1.148-.6.937.937 0 0 1 .599-1.151c3.547-1.049 9.392-.85 13.089 1.351.449.249.599.849.349 1.298-.25.35-.849.498-1.299.248z"
+          ></path>
+        </svg>
+      </a>
+      <a class="slimButton disabled" id="homeButton" href="/">
+        <div>Home</div>
+      </a>
+    </div> -->
 </body>
 
 </html>

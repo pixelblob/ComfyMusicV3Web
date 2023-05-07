@@ -4,11 +4,12 @@
 			"path": "."
 		},
 		{
-			"path": "../../../home/pixel/discordbot/ComfyMusicV3"
+			"path": "/home/pixel/discordbot/ComfyMusicV3"
 		}
 	],
 	"settings": {
 		"liveServer.settings.multiRootWorkspaceName": "v3musicweb",
-		"liveServer.settings.port": 5501
+		"liveServer.settings.port": 5502,
+		"emeraldwalk.runonsave": {}
 	}
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="styles.css" rel="stylesheet">
     <link href="stylesDashboard.css" rel="stylesheet">
+    <script src="/navbar.js"></script>
     <script src="scriptsDashboard.js"></script>
 
     <meta property="og:title" content="ComfyMusicV3" />
@@ -24,38 +25,23 @@
 </head>
 
 <body>
+    <div class="spotifyBackgroundPanel">
     <center>
         <h1>ComfyMusicV3 Spotify Linking/Integration</h1>
     </center>
 
     <center>
+        
         Support for Spotify Connect<br>
         <div id="spotifyButtonWrapper">
             <a id="spotifyButton" href="/spotify.html">
                 <div>Authorize</div>
             </a>
         </div> your spotify and join a vc to test it out (its a bit buggy >.>)
-
     </center>
 
-    <div id="discordOauthWrapper">
-        <a class="slimButton" id="comfyButton" href="/api/discord/login">
-            <div>Comfyzone</div>
-        </a>
-        <a class="slimButton" id="discordButton" href="/api/discord/login">
-            <div>Discord Login</div>
-        </a>
-        <a class="slimButton" id="dashboardButton" href="/dash.html">
-            <div>Music Dashboard</div>
-        </a>
-        <a class="slimButton" id="spotifyButton" href="/spotify.html">
-            <div>Spotify Login</div>
-        </a>
-        <a class="slimButton" id="homeButton" href="/">
-            <div>Home</div>
-        </a>
-    </div>
-
+</div>
+</div>
 </body>
 
 </html>
